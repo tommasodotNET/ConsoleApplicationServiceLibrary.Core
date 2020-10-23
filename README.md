@@ -1,7 +1,7 @@
 # ConsoleApplicationServiceLibrary
 
 ![Publish Packages](https://github.com/tommasodotNET/ConsoleApplicationServiceLibrary/workflows/Publish%20Packages/badge.svg)
-[![package](https://img.shields.io/nuget/vpre/ConsoleApplicationServiceLibrary.svg?label=WebAppServiceLibrary&style=flat-square)](https://www.nuget.org/packages/ConsoleApplicationServiceLibrary)
+[![package](https://img.shields.io/nuget/vpre/ConsoleApplicationServiceLibrary.svg?label=ConsoleApplicationServiceLibrary&style=flat-square)](https://www.nuget.org/packages/ConsoleApplicationServiceLibrary)
 
 This class library is meant to ease configuration and registration of services, database contexts and option files in .NET Core 3.1 projects.
 
