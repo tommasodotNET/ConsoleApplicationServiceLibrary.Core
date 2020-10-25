@@ -20,11 +20,11 @@ jobs:
       run: dotnet restore
 
     - name: Build
-      run: dotnet build --configuration Release --no-restore
+      run: dotnet build ./src --configuration Release --no-restore
 
     - name: Publish ConsoleApplicationServiceLibrary
       uses: brandedoutcast/publish-nuget@v2.5.2
       with:
-          PROJECT_FILE_PATH: ConsoleApplicationServiceLibrary/ConsoleApplicationServiceLibrary.csproj
+          PROJECT_FILE_PATH: src/ConsoleApplicationServiceLibrary/ConsoleApplicationServiceLibrary.csproj
           VERSION_STATIC: 1.0.0
           NUGET_KEY: ${{secrets.NUGET_API_KEY}}
