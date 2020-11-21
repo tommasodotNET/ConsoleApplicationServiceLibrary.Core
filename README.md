@@ -1,22 +1,22 @@
 # ConsoleApplicationServiceLibrary
 
 ![Publish Packages](https://github.com/tommasodotNET/ConsoleApplicationServiceLibrary/workflows/Publish%20Packages/badge.svg)
-[![package](https://img.shields.io/nuget/vpre/ConsoleApplicationServiceLibrary.svg?label=ConsoleApplicationServiceLibrary&style=flat-square)](https://www.nuget.org/packages/ConsoleApplicationServiceLibrary)
+[![package](https://img.shields.io/nuget/vpre/ServiceLibrary.ConsoleApp.svg?label=ServiceLibrary.ConsoleApp&style=flat-square)](https://www.nuget.org/packages/ServiceLibrary.ConsoleApp)
 
-This class library is meant to ease configuration and registration of services, database contexts and option files in .NET Core 3.1 projects.
+This class library is meant to ease configuration and registration of services, database contexts and option files in .NET 5.0 projects.
 
 ## Installation and configuration
 
 Install package from nuget gallery using either dotnet CLI
 
 ```dotnet
-dotnet add package ConsoleApplicationServiceLibrary
+dotnet add package ServiceLibrary.ConsoleApp
 ```
 
 or the package manager
 
 ```
-Install-Package ConsoleApplicationServiceLibrary
+Install-Package ServiceLibrary.ConsoleApp
 ```
 
 All the services will be registered the first time one service is invoked.
