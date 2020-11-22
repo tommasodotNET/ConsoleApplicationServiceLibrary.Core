@@ -24,13 +24,28 @@ Since there's no native support for Dependency Injection in Console Application,
 
 ```csharp
 
-public class SalesTaxesController : BaseController
+public class MyController : BaseController
 {
-    private readonly IService _service;
+    private readonly IOtherService _service;
 
-    public MyController(IService service = null)
+    public MyController(IOtherService service = null)
     {
-        _service = service ?? ServiceProvider.GetService<IService>();
+        _service = service ?? ServiceProvider.GetService<IOtherService>();
+    }
+}
+```
+
+Same goes for Services - inheriting from ```BaseService``` will make an instance of ServiceProvider available.
+
+```csharp
+
+public class MyService : BaseService, IMyService
+{
+    private readonly IOtherService _service;
+
+    public MyService(IOtherService service = null)
+    {
+        _service = service ?? ServiceProvider.GetService<IOtherService>();
     }
 }
 ```
