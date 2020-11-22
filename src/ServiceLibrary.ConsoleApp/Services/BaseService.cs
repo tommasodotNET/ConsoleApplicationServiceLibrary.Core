@@ -1,3 +1,9 @@
+using ConsoleApplicationServiceLibrary.Providers;
+using Microsoft.Extensions.DependencyInjection;
+using System;
+using System.Collections.Generic;
+using System.Text;
+
 namespace ServiceLibrary.ConsoleApp.Services
 {
     public abstract class BaseService
